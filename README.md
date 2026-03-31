@@ -1,178 +1,241 @@
-<!-- 
-$$$$$$$\                                $$\                                     $$\       $$\
-$$  __$$\                               $$ |                                    $$ |      $$ |
-$$ |  $$ | $$$$$$\ $$\    $$\  $$$$$$\  $$ | $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$ |      $$$$$$$\  $$\   $$\
-$$ |  $$ |$$  __$$\\$$\  $$  |$$  __$$\ $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$ |      $$  __$$\ $$ |  $$ |
-$$ |  $$ |$$$$$$$$ |\$$\$$  / $$$$$$$$ |$$ |$$ /  $$ |$$ /  $$ |$$$$$$$$ |$$ /  $$ |      $$ |  $$ |$$ |  $$ |
-$$ |  $$ |$$   ____| \$$$  /  $$   ____|$$ |$$ |  $$ |$$ |  $$ |$$   ____|$$ |  $$ |      $$ |  $$ |$$ |  $$ |
-$$$$$$$  |\$$$$$$$\   \$  /   \$$$$$$$\ $$ |\$$$$$$  |$$$$$$$  |\$$$$$$$\ \$$$$$$$ |      $$$$$$$  |\$$$$$$$ |
-\_______/  \_______|   \_/     \_______|\__| \______/ $$  ____/  \_______| \_______|      \_______/  \____$$ |
-                                                      $$ |                                          $$\   $$ |
-                                                      $$ |                                          \$$$$$$  |
-                                                      \__|                                           \______/
-$$\                                                   $$\                                                          $$\                  $$$$$$\  $$\ $$\
-$$ |                                                  $$ |                                                         $$ |                $$  __$$\ \__|$$ |
-$$ |     $$\   $$\  $$$$$$$\ $$$$$$\   $$$$$$$\       $$ |      $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$\        $$$$$$$ | $$$$$$\        $$ /  \__|$$\ $$ |$$\    $$\ $$$$$$\
-$$ |     $$ |  $$ |$$  _____|\____$$\ $$  _____|      $$ |     $$  __$$\ $$  __$$\ $$  __$$\ $$  _____|      $$  __$$ | \____$$\       \$$$$$$\  $$ |$$ |\$$\  $$  |\____$$\
-$$ |     $$ |  $$ |$$ /      $$$$$$$ |\$$$$$$\        $$ |     $$ /  $$ |$$ /  $$ |$$$$$$$$ |\$$$$$$\        $$ /  $$ | $$$$$$$ |       \____$$\ $$ |$$ | \$$\$$  / $$$$$$$ |
-$$ |     $$ |  $$ |$$ |     $$  __$$ | \____$$\       $$ |     $$ |  $$ |$$ |  $$ |$$   ____| \____$$\       $$ |  $$ |$$  __$$ |      $$\   $$ |$$ |$$ |  \$$$  / $$  __$$ |
-$$$$$$$$\\$$$$$$  |\$$$$$$$\\$$$$$$$ |$$$$$$$  |      $$$$$$$$\\$$$$$$  |$$$$$$$  |\$$$$$$$\ $$$$$$$  |      \$$$$$$$ |\$$$$$$$ |      \$$$$$$  |$$ |$$ |   \$  /  \$$$$$$$ |
-\________|\______/  \_______|\_______|\_______/       \________|\______/ $$  ____/  \_______|\_______/        \_______| \_______|       \______/ \__|\__|    \_/    \_______|
-                                                                         $$ |
-                                                                         $$ |
-                                                                         \__|
--->
+<div align="center">
 
-<h1 align="center">
-  Jogo Interativo de Matemática com Visão Computacional <img width="25px" src="https://raw.githubusercontent.com/eoLucasS/portfolio/main/assets/img/icon.svg"/>
-</h1>
+<img src="https://img.shields.io/badge/VisionQuest-v2.0.0-00FFFB?style=for-the-badge&labelColor=1e1e2e" alt="VisionQuest v2.0.0" />
 
-<p align="center">
-  <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/eolucass/VisionQuest?color=00FFFB">
-  <img alt="Github Language Count" src="https://img.shields.io/github/languages/count/eolucass/VisionQuest?color=00FFFB">
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/eolucass/VisionQuest?color=00FFFB">
-</p>
+# VisionQuest
 
-<br>
+**Jogo educacional de matematica controlado por gestos das maos via webcam**
 
-<p align="center">
-  <img src="VisionQuest/assets/preview.png" width="650" height="338" alt="VisionQuest Preview">
-</p>
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-5C3EE8.svg?style=flat-square&logo=opencv&logoColor=white)](https://opencv.org)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-00A67E.svg?style=flat-square)](https://github.com/google/mediapipe)
+[![License: MIT](https://img.shields.io/badge/License-MIT-a6e3a1.svg?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-00FFFB.svg?style=flat-square)](https://github.com/eoLucasS/VisionQuest/pulls)
 
-<br>
+[Funcionalidades](#funcionalidades) · [Quick Start](#quick-start) · [Como Jogar](#como-jogar) · [Estrutura](#estrutura-do-projeto) · [Colaboradores](#colaboradores)
 
-## 📝 Descrição 
+</div>
 
-O **VisionQuest** é uma ferramenta educacional interativa que utiliza técnicas avançadas de visão computacional para proporcionar uma experiência de aprendizagem única em matemática. O jogo foi desenvolvido com o objetivo de promover a educação inclusiva e acessível, alinhado ao **ODS 4 da ONU**, assegurando educação de qualidade e oportunidades de aprendizagem para todos.
+---
 
-## 🚀 Funcionalidades Desenvolvidas
+## Sobre
 
-### 1. Reconhecimento Avançado de Mãos e Gestos
+O **VisionQuest** utiliza visao computacional para transformar a webcam em um controle de jogo. O jogador responde questoes matematicas usando gestos das maos - juntando o indicador com o polegar (gesto de pinca) para selecionar respostas.
 
-- **Bibliotecas Utilizadas**: MediaPipe e OpenCV para reconhecimento preciso de mãos em tempo real.
-- **Detecção Ambidestra Melhorada**: Suporte aprimorado para detecção simultânea de ambas as mãos.
-- **Gestos Interativos**: Implementação do gesto de pinça para seleção e interação com os elementos do jogo.
-- **Feedback Visual Aprimorado**: Marcadores de mãos personalizáveis e indicadores visuais claros para melhor usabilidade.
+O projeto foi desenvolvido como ferramenta educacional alinhada ao **ODS 4 da ONU** (educacao de qualidade), promovendo aprendizagem interativa e acessivel.
 
-### 2. Geração Dinâmica de Questões Matemáticas
+> [!NOTE]
+> Originalmente criado como projeto academico em 2024, foi completamente reestruturado em 2026 com arquitetura modular, novo sistema de UI/UX e mecanicas de jogo aprimoradas.
 
-- **Níveis de Dificuldade Otimizados**: Fácil, Médio e Difícil, com transição suave entre os níveis.
-- **Novos Tipos de Questões**:
-  - Equações de segundo grau.
-  - Sistemas de equações lineares.
-  - Funções exponenciais e logarítmicas avançadas.
-  - Análise combinatória e probabilidade.
+---
 
-### 3. Interface Gráfica e Interatividade
+## Funcionalidades
 
-- **Botões Virtuais Responsivos**: Melhorias nos botões interativos para respostas e navegação.
-- **Plano Cartesiano Interativo Melhorado**: Agora com zoom e pan, permitindo uma exploração mais detalhada.
-- **Feedback Imediato com Áudio**: Adição de efeitos sonoros para acertos e erros, aumentando o engajamento.
-- **Animações Suaves**: Transições animadas entre telas e elementos para uma experiência mais agradável.
+<details>
+<summary><strong>Deteccao de Maos em Tempo Real</strong></summary>
 
-### 4. Sistema de Pontuação e Progressão
+- Deteccao de ate 2 maos simultaneamente via MediaPipe Tasks API
+- Cursor visual seguindo o dedo indicador em tempo real
+- Gesto de pinca (indicador + polegar) para interacao
+- Esqueleto da mao desenhado sobre a interface
+- Cursor muda de cor ao realizar a pinca (azul → verde)
 
-- **Barra de Progresso Visual**: Indicador de progresso no jogo com objetivos claros.
-- **Sistema de Bônus**: Recompensas por acertos consecutivos, incentivando a precisão.
-- **Tela de Vitória Personalizada**: Celebração dos achievements do jogador ao finalizar o jogo.
+</details>
 
-### 5. Melhorias na Usabilidade e Correções
+<details>
+<summary><strong>Sistema de Questoes Matematicas</strong></summary>
 
-- **Delays Inteligentes**: Implementação de delays após ações críticas para evitar cliques acidentais.
-- **Correções de Bugs**: Resolução de problemas conhecidos para um gameplay mais fluido.
-- **Otimizações de Performance**: Ajustes para garantir que o jogo rode suavemente em uma variedade de sistemas.
+- **Facil:** soma e subtracao com numeros de 1 a 20
+- **Medio:** multiplicacao, divisao e potencias
+- **Dificil:** logaritmos, raizes quadradas, equacoes de 1o grau e expressoes com ordem de operacoes
+- Plano cartesiano interativo - toque no ponto correto com a mao
+- Distratores inteligentes (opcoes erradas plausíveis, sem respostas obvias)
 
-## 📚 Bibliotecas e Ferramentas
+</details>
 
-- [Python](https://www.python.org/)
-- [OpenCV](https://opencv.org/)
-- [MediaPipe](https://github.com/google/mediapipe)
-- [NumPy](https://numpy.org/)
-- [Pygame](https://www.pygame.org/news)
-- [Visual Studio Code](https://code.visualstudio.com/)
+<details>
+<summary><strong>Mecanicas de Jogo</strong></summary>
 
-## 💡 Avanços Realizados
+- **3 vidas** - erros tem consequencia real
+- **Sistema de streak** - bonus a cada 3 acertos consecutivos
+- **Barra de progresso** com contador de pontos (ex: 7/10)
+- **Feedback sonoro** - sons distintos para acerto e erro
+- **Resposta correta revelada ao errar** - aprendizado pelo erro
+- **Tela de fim de jogo** com estatisticas completas (acertos, erros, pontuacao)
 
-- **Implementação de Sistema de Áudio**: Inclusão de feedback sonoro para interações, aumentando a imersão do jogador.
-- **Correção na Fonte de Feedback**: Ajustes tipográficos para melhor legibilidade em diferentes resoluções.
-- **Alinhamento da Tela Inicial de Dificuldade**: Melhoria na disposição dos elementos para uma navegação mais intuitiva.
-- **Sistema de Pontuação com Limite e Bônus**: Introdução de um sistema de pontuação que recompensa o jogador por desempenho consistente.
-- **Tela de Vitória Personalizada**: Criação de uma tela final que celebra o sucesso do jogador e encoraja novas tentativas.
-- **Fluxo de Jogo Aprimorado**: Otimização das transições entre telas e estados do jogo para uma experiência mais coesa.
-- **Correções de Bugs e Otimizações**: Resolução de problemas técnicos e melhorias na eficiência do código.
-- **Delays Após Interações**: Implementação de delays estratégicos após cliques em "Jogar" e nas imagens dos colaboradores para evitar múltiplos cliques acidentais.
-- **Correções nos Controles de Gestos**: Ajustes na sensibilidade e precisão dos gestos para melhorar a responsividade.
-- **Atualização da Interface Gráfica**: Refinamento visual dos elementos da interface para um design mais moderno.
+</details>
 
-## 📊 Alinhamento com a Ementa Acadêmica
+<details>
+<summary><strong>Interface e UX</strong></summary>
 
-O projeto abrange uma ampla gama de tópicos matemáticos, incluindo:
+- HUD com pontuacao, streak, vidas (coracoes) e dificuldade
+- Botoes com hover highlight - mudam de cor ao passar o dedo
+- Mao sempre visivel por cima de overlays (dicas, fim de jogo)
+- Tema escuro com contraste otimizado para leitura sobre webcam
+- Instrucoes visuais de como interagir em cada tela
 
-- **Aritmética dos inteiros**
-- **Álgebra e Álgebra Linear**
-- **Produto cartesiano**
-- **Sistemas lineares**
+</details>
 
-  <a href="https://dev-nycolas-garcia.vercel.app/" alt="Documentação">
-    Artigo do Projeto
-  </a>
-## 🔗 Links
+---
 
-<p align="left">
+## Quick Start
 
- <a href="https://www.linkedin.com/in/lucaslopesdasilva/" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-000?style=for-the-badge&logo=Linkedin&logoColor=0A66C2&link=https://www.linkedin.com/in/lucaslopesdasilva"/> 
- </a>
-  
- <a href="https://twitter.com/eoLucasS114" alt="Twitter">
-  <img src="https://img.shields.io/badge/-Twitter-000?style=for-the-badge&logo=Twitter&logoColor=1DA1F2&link=https://twitter.com/eoLucasS114"/> 
- </a>
+> [!TIP]
+> Pre-requisitos: [Python](https://python.org) 3.9+ e uma webcam.
 
- <a href="https://portfolio-lucaslopes.vercel.app" alt="Portfolio">
-  <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=FFF&link=https://portfolio-lucaslopes.vercel.app"/>
- </a>
+```bash
+# 1. Clone o repositorio
+git clone https://github.com/eoLucasS/VisionQuest.git
+cd VisionQuest
 
- </p>
- 
-## 💻 Colaboradores
+# 2. Crie e ative um ambiente virtual
+python -m venv venv
+source venv/Scripts/activate   # Windows (Git Bash)
+# ou: venv\Scripts\activate    # Windows (CMD/PowerShell)
+# ou: source venv/bin/activate # Linux/macOS
+
+# 3. Instale as dependencias
+pip install -r requirements.txt
+
+# 4. Execute o jogo
+python main.py
+```
+
+> [!IMPORTANT]
+> Na primeira execucao o MediaPipe carrega o modelo de deteccao de maos, o que pode levar alguns segundos.
+
+---
+
+## Como Jogar
+
+| Acao | Gesto |
+|------|-------|
+| **Mover cursor** | Mova a mao - o dedo indicador controla o cursor |
+| **Selecionar/Clicar** | Junte o indicador com o polegar (pinca) |
+| **Sair** | Pressione a tecla `Q` a qualquer momento |
+
+### Fluxo do Jogo
+
+```
+Tela Inicial → Selecao de Dificuldade → Questoes → Fim de Jogo
+     │                                      │            │
+     └─ Sair                                └─ Dicas     └─ Jogar Novamente
+```
+
+1. **Tela inicial** - selecione "Jogar" com o gesto de pinca
+2. **Dificuldade** - escolha entre Facil, Medio ou Dificil
+3. **Questoes** - responda fazendo pinca sobre a opcao correta ou tocando o ponto no plano cartesiano
+4. **Fim** - ao atingir 10 pontos (vitoria) ou perder 3 vidas (derrota), veja suas estatisticas
+
+---
+
+## Estrutura do Projeto
+
+```
+VisionQuest/
+├── main.py                    # Ponto de entrada
+├── requirements.txt           # Dependencias
+├── assets/
+│   ├── hand_landmarker.task   # Modelo MediaPipe de deteccao de maos
+│   ├── preview.png            # Screenshot do jogo
+│   ├── images/                # Fotos dos colaboradores, icones
+│   └── sounds/                # Efeitos sonoros (acerto/erro)
+└── src/
+    ├── config.py              # Constantes e configuracoes centralizadas
+    ├── game.py                # State machine principal do jogo
+    ├── hand_tracker.py        # Deteccao de maos (MediaPipe Tasks API)
+    ├── button.py              # Botoes interativos com hover
+    ├── cartesian_plane.py     # Renderizacao do plano cartesiano
+    ├── question_generator.py  # Gerador de questoes matematicas
+    ├── score_system.py        # Pontuacao, vidas e streaks
+    └── screens/
+        ├── title.py           # Tela inicial
+        ├── difficulty.py      # Selecao de dificuldade
+        ├── gameplay.py        # Tela principal do jogo + HUD
+        ├── game_over.py       # Tela de fim de jogo com estatisticas
+        └── hint.py            # Overlay de dicas
+```
+
+---
+
+## Stack Tecnica
+
+| Tecnologia | Uso |
+|-----------|-----|
+| [Python 3](https://python.org) | Linguagem principal |
+| [OpenCV](https://opencv.org) | Captura de video e renderizacao da interface |
+| [MediaPipe](https://github.com/google/mediapipe) | Deteccao de maos em tempo real (Tasks API) |
+| [Pygame CE](https://pyga.me) | Sistema de audio |
+| [NumPy](https://numpy.org) | Operacoes numericas |
+
+---
+
+## Topicos Matematicos
+
+O projeto abrange os seguintes topicos, alinhados a ementa academica:
+
+- Aritmetica (soma, subtracao, multiplicacao, divisao)
+- Potenciacao e raizes quadradas
+- Logaritmos
+- Equacoes de 1o grau
+- Expressoes com ordem de operacoes
+- Plano cartesiano e coordenadas
+
+---
+
+## Colaboradores
 
 <table>
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/lucaslopesdasilva/">
-        <img src="https://avatars.githubusercontent.com/u/119815116?v=4" width="100px;" alt="Lucas Silva"/><br>
-        <sub>
-          <b>Lucas Silva</b>
-        </sub>
+        <img src="https://avatars.githubusercontent.com/u/119815116?v=4" width="100px;" /><br>
+        <sub><b>Lucas Silva</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/nycolasagrgarcia/">
-        <img src="https://avatars.githubusercontent.com/u/127459801?v=4" width="100px;" alt="Nycolas Garcia"/><br>
-        <sub>
-          <b>Nycolas Garcia</b>
-        </sub>
+        <img src="https://avatars.githubusercontent.com/u/127459801?v=4" width="100px;" /><br>
+        <sub><b>Nycolas Garcia</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/danilodoes/">
-        <img src="https://avatars.githubusercontent.com/u/110133245?v=4" width="100px;" alt="Danilo Santos"/><br>
-        <sub>
-          <b>Danilo Santos</b>
-        </sub>
+        <img src="https://avatars.githubusercontent.com/u/110133245?v=4" width="100px;" /><br>
+        <sub><b>Danilo Santos</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/breno-melo-53822a20a/">
-        <img src="https://avatars.githubusercontent.com/u/44868973?v=4" width="100px;" alt="Breno Melo"/><br>
-        <sub>
-          <b>Breno Melo</b>
-        </sub>
+        <img src="https://avatars.githubusercontent.com/u/44868973?v=4" width="100px;" /><br>
+        <sub><b>Breno Melo</b></sub>
       </a>
     </td>
   </tr>
 </table>
 
------
+<p>
+  <a href="https://www.linkedin.com/in/lucaslopesdasilva/">
+    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://portfolio-lucaslopes.vercel.app">
+    <img src="https://img.shields.io/badge/-Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://github.com/eoLucasS">
+    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
-<h3 align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/lucaslopesdasilva/">Lucas Lopes da Silva</a> ☕</h3>
+---
+
+## Licenca
+
+MIT. Veja [LICENSE](LICENSE) para detalhes.
+
+---
+
+<div align="center">
+
+Feito por [Lucas Silva](https://github.com/eoLucasS)
+
+</div>
