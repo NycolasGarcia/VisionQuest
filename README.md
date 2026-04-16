@@ -246,10 +246,3 @@ O projeto abrange os seguintes topicos, alinhados a ementa academica:
 
 MIT. Veja [LICENSE](LICENSE) para detalhes.
 
----
-
-<div align="center">
-
-Feito por [Lucas Silva](https://github.com/eoLucasS)
-
-</div>
