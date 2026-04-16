@@ -6,13 +6,24 @@
 
 **Jogo educacional de matematica controlado por gestos das maos via webcam**
 
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-5C3EE8.svg?style=flat-square&logo=opencv&logoColor=white)](https://opencv.org)
-[![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-00A67E.svg?style=flat-square)](https://github.com/google/mediapipe)
+[Funcionalidades](#funcionalidades) · [Quick Start](#quick-start) · [Como Jogar](#como-jogar) · [Estrutura](#estrutura-do-projeto) · [Colaboradores](#colaboradores)
+
+Ferramentas:
+
+  <img src="https://skills.syvixor.com/api/icons?perline=15&i=python,pygame,opencv" width="">
+  
+  *Python • Pygame • OpenCV*
+
+Detalhes:
+
+![Version](https://img.shields.io/badge/version-1.0-grey?style=flat&color=darkgrey)
+![Stars](https://img.shields.io/github/stars/NycolasGarcia/EDA-Speeder?style=flat&color=darkgrey)
+![Repo Views](https://komarev.com/ghpvc/?username=NycolasGarcia&repo=EDA-Speeder&color=lightgrey)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-a6e3a1.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-00FFFB.svg?style=flat-square)](https://github.com/eoLucasS/VisionQuest/pulls)
 
-[Funcionalidades](#funcionalidades) · [Quick Start](#quick-start) · [Como Jogar](#como-jogar) · [Estrutura](#estrutura-do-projeto) · [Colaboradores](#colaboradores)
+
 
 </div>
 
@@ -85,20 +96,20 @@ O projeto foi desenvolvido como ferramenta educacional alinhada ao **ODS 4 da ON
 
 ```bash
 # 1. Clone o repositorio
-git clone https://github.com/eoLucasS/VisionQuest.git
+git clone https://github.com/NycolasGarcia/VisionQuest.git
 cd VisionQuest
 
 # 2. Crie e ative um ambiente virtual
 python -m venv venv
-source venv/Scripts/activate   # Windows (Git Bash)
-# ou: venv\Scripts\activate    # Windows (CMD/PowerShell)
-# ou: source venv/bin/activate # Linux/macOS
+    venv/Scripts/activate   # Windows (Git Bash)
+    source venv/bin/activate # Linux/macOS
 
 # 3. Instale as dependencias
 pip install -r requirements.txt
 
 # 4. Execute o jogo
-python main.py
+     py main.py
+     python3 main.py
 ```
 
 > [!IMPORTANT]
@@ -184,7 +195,7 @@ O projeto abrange os seguintes topicos, alinhados a ementa academica:
 ---
 
 ## Colaboradores
-
+<div align=center>
 <table>
   <tr>
     <td align="center">
@@ -213,18 +224,21 @@ O projeto abrange os seguintes topicos, alinhados a ementa academica:
     </td>
   </tr>
 </table>
+</div>
 
-<p>
-  <a href="https://www.linkedin.com/in/lucaslopesdasilva/">
-    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://portfolio-lucaslopes.vercel.app">
-    <img src="https://img.shields.io/badge/-Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white" />
-  </a>
-  <a href="https://github.com/eoLucasS">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
+## Contato
+
+<div align="center">
+
+| Plataforma | Link |
+|------------|------|
+| <img src="https://skills.syvixor.com/api/icons?i=linkedin" width="20"> LinkedIn | <a href="https://www.linkedin.com/in/NycolasAGRGarcia/" target="_blank">Acessar</a> |
+| <img src="https://skills.syvixor.com/api/icons?i=github" width="20"> GitHub | <a href="https://github.com/NycolasGarcia" target="_blank">Acessar</a> |
+| <img src="https://skills.syvixor.com/api/icons?i=gmail" width="20"> Gmail | <a href="mailto:nycolasagrg@gmail.com">Enviar</a> |
+| <img src="https://skills.syvixor.com/api/icons?i=vercel" width="20"> Vercel | <a href="https://dev-nycolas-garcia.vercel.app/" target="_blank">Visitar</a> |
+
+</div>
+
 
 ---
 
